@@ -212,6 +212,14 @@ graph LR
 
 Dedicated displays run as isolated Cocoa-Way worker processes. A rootless worker may own several native application windows while retaining one runtime/display assignment. Worker telemetry is published back to the control plane without forcing the GUI to redraw continuously.
 
+## Future Direction
+
+### [Relationship to Plyra](https://github.com/J-x-Z/Plyra)
+
+Some of the compositor, native-surface, transport, and cross-platform work developed in Cocoa-Way has also informed Plyra, a broader project currently being incubated.
+
+Cocoa-Way remains an independent project and has not been abandoned. More information will be shared when Plyra reaches a stage suitable for public release.
+
 ## Diagnostics and expected behavior
 
 - A static display reports `0.0 fps - idle`; Cocoa-Way renders on demand rather than polling at a fixed frame rate.
